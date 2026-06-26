@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Primera fe y alegría</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-background">
+            <img src="img/logo.png" alt="Logo del colegio La Primera fe y alegría" class="background-logo">
+        </div>
+        <div class="welcome-card">
+            <h1>Bienvenidos a La Primera fe y alegría</h1>
+            <p>Educando con corazón, construyendo sueños y formando líderes con valores. Bienvenidos Nataniel y Akemi.</p>
+            <button id="startButton">Ingresar al colegio</button>
+        </div>
+    </div>
+
+    <main class="app-container hidden" id="appContainer">
+        <header class="app-header">
+            <div>
+                <h2>La Primera fe y alegría</h2>
+                <p>Un colegio con espíritu, tradición y compromiso.</p>
+            </div>
+            <img src="img/dire_negro.jpeg" alt="La Primera fe y alegría" class="header-image">
+        </header>
+
+        <nav class="menu">
+            <button class="menu-item active" data-section="colegio">1. Colegio</button>
+            <button class="menu-item" data-section="actividades">2. Actividades</button>
+            <button class="menu-item" data-section="informativo">3. Panel informativo</button>
+            <button class="menu-item" data-section="formularios">4. Formularios</button>
+        </nav>
+
+        <section class="content-section" id="colegio">
+            <div class="section-header">
+                <h3>Colegio</h3>
+                <p>Misión y Visión</p>
+            </div>
+            <div class="section-cards">
+                <article class="card red-card">
+                    <h4>Misión</h4>
+                    <p>Formar estudiantes responsables, creativos y solidarios, con valores cristianos y amor por el aprendizaje.</p>
+                </article>
+                <article class="card green-card">
+                    <h4>Visión</h4>
+                    <p>Ser un colegio líder en educación integral, reconocido por su ambiente alegre, participativo y de crecimiento humano.</p>
+                </article>
+            </div>
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Misi�n y Visi�n" class="section-image">
+        </section>
+
+        <section class="content-section hidden" id="actividades">
+            <div class="section-header">
+                <h3>Actividades</h3>
+                <p>Eventos especiales que unen a nuestra comunidad escolar.</p>
+            </div>
+            <ul class="activity-list">
+                <li>Carnavales</li>
+                <li>Dia del Padre</li>
+                <li>Dia del Estudiante</li>
+                <li>Dia de la Madre</li>
+                <li>Dia del Niño</li>
+                <li>Dia del Maestro</li>
+                <li>Aniversario del colegio La Primera</li>
+                <li>6 de Agosto</li>
+                <li>Y mucho más</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=900&q=80" alt="Actividades escolares" class="section-image">
+        </section>
+
+        <section class="content-section hidden" id="informativo">
+            <div class="section-header">
+                <h3>Panel informativo</h3>
+                <p>Noticias y guías para estudiantes y familias.</p>
+            </div>
+            <div class="panel-grid">
+                <article class="card red-card">
+                    <h4>Entrevistas de materias</h4>
+                    <p>Encuentra entrevistas con docentes y estudiantes sobre matemáticas, ciencias, literatura y más.</p>
+                </article>
+                <article class="card green-card">
+                    <h4>Horario de invierno</h4>
+                    <p>El horario de invierno inicia el 1 de junio: entrada 8:45 am y salida 12:20 p.m. en la tarde empieza a las 2:00 y la salida es a las 5:25</p>
+                </article>
+            </div>
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="Panel informativo" class="section-image">
+        </section>
+
+        <section class="content-section hidden" id="formularios">
+            <div class="section-header">
+                <h3>Formularios</h3>
+                <p>Consulta a tus profesores y envía tus inquietudes.</p>
+            </div>
+            <form class="contact-form">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+
+                <label for="curso">Curso / Grado</label>
+                <input type="text" id="curso" placeholder="Ej. tu grado" required>
+
+                <label for="profesor">Profesor a consultar</label>
+                <input type="text" id="profesor" placeholder="Nombre del profesor" required>
+
+                <label for="consulta">Consulta</label>
+                <textarea id="consulta" rows="5" placeholder="Escribe tu pregunta o comentario" required></textarea>
+
+                <button type="submit">Enviar consulta</button>
+                <p class="form-message" id="formMessage"></p>
+            </form>
+            <img src="https://images.unsplash.com/photo-1517971071642-34a2dce0c8df?auto=format&fit=crop&w=900&q=80" alt="Formulario" class="section-image">
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
